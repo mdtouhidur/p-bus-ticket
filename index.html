@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUS-TICKET-COUNTER-WEB</title>
+    <!-- DAISY-UI-AND-TAILWIND-CSS-LINK -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- STYLE-CSS-LINK -->
+    <link rel="stylesheet" href="style-css-file/main.css">
+</head>
+<body>
+    <!-- HEADER-SECTION-DESIGN -->
+    <header class="w-[100%] sticky top-0 z-10">
+        <!-- NAV-BAR-DESIGN -->
+        <nav class="max-w-[90%] bg-[#00800081] mx-auto">
+            <div class="navbar ">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu w-[235px]  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <div class=" search-box-area flex flex-row items-center justify-around  w-auto h-auto p-1 bg-slate-500 relative">
+                            <input class="h-8 p-4 pr-10  search-box-area outline-none bg-slate-200"  type="search" name="" id="" placeholder="search">
+    
+                            <div onclick="" class="cursor-pointer select-none  bg-white hover:bg-slate-400 hover:text-red-400 hover:border-red-500  absolute flex flex-row items-center  right-1 p-1 search-icon">
+                                <input class=""  type="submit" value="">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </ul>
+                    
+                  </div>
+                  <div class="btn bg-[#a5afa527]">
+                   <h1><a href="">P-Ticket</a></h1>
+                  </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a href="#home">home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex gap-10">
+                    <div class=" search-box-area flex flex-row items-center justify-around  w-auto h-auto p-1 bg-slate-500 lg:visible invisible relative">
+                        <input class="h-8 p-4 pr-10  search-box-area outline-none bg-slate-200"  type="search" name="" id="" placeholder="search">
+
+                        <div onclick="" class="cursor-pointer select-none  bg-white hover:bg-slate-400 hover:text-red-400 hover:border-red-500  absolute flex flex-row items-center  right-1 p-1 search-icon">
+                            <input class=""  type="submit" value="">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div><button><a href="#payNow" class="btn  bg-[#a5afa527]">pay Now</a></button></div>
+                </div>
+              </div>
+        </nav>
+    </header>
+     
+    <!-- MAIN-SECTION-DESIGN -->
+    <main class="w-[100%]">
+        <!-- BANNER_SECTION_PART_DESIGN -->
+        <section id="home" class="lg:w-[90%] mx-auto  mt-16 pt-10 rounded-sit-area">
+            <div class="relative">
+            <div class="w-[100%] mx-auto ">
+                <div class="  w-full flex flex-col justify-center lg:relative">
+                    <img src="image/banner.png" alt="">
+                    <div class="lg:absolute  lg:mt-2 mt-10   flex flex-col justify-center lg:items-center w-[100%] lg:bg-[#0a0a0a36] bg-[#0a0a0ac7] gap-y-5 lg:h-[565px]  rounded-[30px]">
+                        <h1 class="text-white lg:text-6xl text-4xl  font-extrabold text-center">End-to-End Travel with</h1>
+                        <h1 class="text-green-400 text-4xl font-extrabold text-center">P Paribahan</h1>
+                        <p class="text-white text-xl font-bold text-center">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
+                        <button class="btn bg-green-200 mb-5 cmonBorder w-32 mx-auto">Buy Tickets</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="w-full  lg:absolute -bottom-20 mt-8">
+              <div class="flex lg:flex-row flex-col gap-5  justify-between items-center mx-20">
+                <div class=" flex flex-row items-center justify-center text-center gap-x-2 lg:w-[30%] w-[95%] h-[150px] lg:bg-white bg-slate-200 rounded-buttom-area  rounded-[20px]">
+                  <div><img class="w-14" src="image/people.png" alt=""></div>
+                  <div>
+                    <h1 class="font-extrabold text-xl">500K+</h1>
+                    <p>Registered users</p>
+                  </div>
+                </div>
+                <div class=" flex flex-row items-center justify-center text-center gap-x-2 lg:w-[30%] w-[95%] h-[150px] lg:bg-white bg-slate-200 rounded-buttom-area  rounded-[20px]">
+                  <div><img class="w-14" src="image/ticket-cupon.png" alt=""></div>
+                  <div>
+                    <h1 class="font-extrabold text-xl">1.7 lacks</h1>
+                    <p>Tickets sold</p>
+                  </div>
+                </div>
+                <div class=" flex flex-row items-center justify-center text-center gap-x-2 lg:w-[30%] w-[95%] h-[150px] lg:bg-white bg-slate-200 rounded-buttom-area  rounded-[20px]">
+                  <div><img class="w-14" src="image/stoppage.png" alt=""></div>
+                  <div>
+                    <h1 class="font-extrabold text-xl">80K+</h1>
+                    <p>Rental partners</p>
+                  </div>
+                </div>
+               </div>
+
+            </div>
+          </div>
+        </section>
+
+<!-- OFFER SECTION WORK -->
+        <section id="" class="lg:w-[90%]  mx-auto  lg:mt-32 mt-10 pt-10 rounded-sit-area">
+             <div class="w-full mx-auto text-center"><h1 class="font-extrabold lg:text-6xl text-4xl ">Best offers for you</h1></div>
+             <div class="flex lg:flex-row flex-col items-center justify-around mx-auto mt-10 gap-8">
+              <div class="lg:w-[50%] w-[90%] bg-[#ff00ea83] flex flex-row justify-between items-center px-10 rounded-[20px]">
+                <div>
+                  <h1  class="font-extrabold text-2xl">15% OFF</h1>
+                  <p>on your next purchase</p>
+                  <p> use by January 2024</p>
+                </div>
+                <img src="image/cupon-devider.png" alt="">
+                <div class="text-center">
+                  <h1 class="font-extrabold text-2xl">NEW15</h1>
+                   <p> Coupon Code</p>
+                </div>
+              </div>
+              <div class="lg:w-[50%] w-[90%] bg-[#ff0d0d8c] flex flex-row justify-between items-center px-10 rounded-[20px]">
+                <div>
+                  <h1  class="font-extrabold text-2xl">20% OFF
+                    </h1>
+                  <p>on your next purchase
+                  </p>
+                  <p> use by January 2024</p>
+                </div>
+                <img src="image/cupon-devider.png" alt="">
+                <div class="text-center">
+                  <h1 class="font-extrabold text-2xl">Couple20</h1>
+                   <p> Coupon Code</p>
+                </div>
+              </div>
+             </div>
+             <div class="w-full mx-auto text-center flex flex-col items-center justify-center">
+              <button class="btn mt-5 cmonBorder text-green-400">See All Offers</button>
+             </div>
+        </section>
+
+        <section id="" class="lg:w-[90%] mx-auto  lg:mt-32 mt-8 pt-10  rounded-sit-area">
+          <div class="w-full flex flex-col justify-center items-center mx-auto text-center">
+            <h1 class="font-extrabold text-6xl">P.H Paribahan</h1>
+            <p>Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
+          </div>
+          <div class="w-full flex lg:flex-row flex-col lg:justify-between justify-center    mx-auto text-center bg-slate-200 rounded-[20px] mt-5 " >
+            <div class="lg:w-[70%] w-[90% m-auto]">
+              <div class="flex lg:flex-row flex-col justify-between">
+                <div class="flex flex-row items-center gap-2 p-10">
+                  <img src="image/bus-logo.png" alt="">
+                  <div class="text-start">
+                    <h1 class="text-2xl font-bold">Greenline Paribahan</h1>
+                    <p>Coach-009-WEB ! AC_Business</p>
+                  </div>
+                </div>
+                <div class="flex flex-row items-center lg:justify-normal justify-center gap-2 p-10 ">
+                  <div class=" cmonBorder flex flex-row items-center gap-2 p-2 rounded-xl">
+                    <img src="image/bus-icon.png" alt="">
+                    <p><samp id="Seatsleft" class="font-bold bg-green-300 rounded-full p-2">40</samp> Seats left</p></div>
+                </div>
+              </div>
+              <div class=" w-[90%]  bg-white m-auto rounded-[20px] px-5 cmonBorder">
+                <div class="flex flex-row justify-between items-center w-[90%] m-auto py-5">
+                  <h1>Route</h1>
+                  <h1>Route</h1>
+
+                </div>
+                <hr>
+                <div class="flex flex-row justify-between items-center w-[90%] m-auto py-5">
+                  <h1>Route</h1>
+                  <h1>Route</h1>
+
+                </div>
+                <hr>
+                <div class="flex lg:flex-row flex-col justify-around items-center w-[90%] m-auto mt-5 gap-x-5">
+                  <button class="btn mb-5">Boarding Point - Laxmipur</button>
+                  <button class="btn mb-5">Boarding Point - Laxmipur</button>
+                  <button class="btn mb-5">Boarding Point - Laxmipur</button>
+                </div>
+
+              </div>
+            </div>
+
+            <img class="lg:block hidden" src="image/info-devider.png" alt="">
+            <div class="flex flex-col items-center justify-center lg:w-[30%] w-[90%] lg:my-0 my-5">
+              <img src="image/fare.png" alt="">
+              <h1 class="font-bold text-xl">550 Taka</h1>
+              <p> Per Seat</p>
+            </div>
+          </div>
+          
+        </section>
+
+
+        
+      <section id="payNow" class="lg:w-[90%] mx-auto  lg:mt-32 mt-8 pt-10  rounded-sit-area">
+        <div class="flex lg:flex-row flex-col lg:gap-x-5 gap-x-2 ">
+            <div class="lg:w-[48%] h-auto mx-auto">
+                <div class="w-full  bg-yellow-50 p-2 rounded-[20px] cmonBorder pb-5">
+                  <h1 class="p-5 font-extrabold text-3xl">Select Your Seat</h1>
+                  <hr>
+                  <div class="flex flex-row justify-between">
+                    <div  class="flex flex-row p-5 items-center font-bold">
+                        <img src="image/seat-gray.png" alt="">
+                        <samp>Available</samp>
+                    </div>
+                    <div class="flex flex-row p-5 items-center font-bold">
+                        <img src="image/seat-green.png" alt="">
+                        <samp>Selected</samp>
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+
+                <!-- SIT_NUMBER_ -->
+                <div class="flex flex-row   lg:gap-x-8    select-none bg-yellow-50 rounded-[20px] mb-10 pb-10 cmonBorder pt-5 mt-2 re">
+
+                    <div class="">
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class=" invisible">invisible</kbd>
+                        <kbd class="kbd btn w-20 invisible">invisible</kbd>
+                        <kbd class="kbd btn w-20 invisible">invisible</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="">A</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">A1</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">A2</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="">B</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">B1</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">B2</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="">C</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">C1</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">C2</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="">D</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">D1</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">D2</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="">E</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">E1</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">E2</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="">F</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">F1</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">F2</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="">G</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">G1</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">G2</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="">H</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">H1</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">H2</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="">I</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">I1</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">I2</kbd>
+                      </div>
+                    </div>
+                    <div class="relative md:pr-2 pr-2">
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="kbd btn w-20 invisible">invisible</kbd>
+                        <kbd class="kbd h-20 top-0 w-[100px] absolute bg-green-200 hover:bg-slate-300 driveBox "><samp class="hidden">CAPTEN <br> TOUHID</samp><img class="wheel" src="image/wheel.png" alt=""></kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="kbd btn w-20 selectBusSit">A3</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">A4</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="kbd btn w-20 selectBusSit">B3</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">B4</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="kbd btn w-20 selectBusSit">C3</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">C4</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="kbd btn w-20 selectBusSit">D3</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">D4</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="kbd btn w-20 selectBusSit">E3</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">E4</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="kbd btn w-20 selectBusSit">F3</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">F4</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="kbd btn w-20 selectBusSit">G3</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">G4</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="kbd btn w-20 selectBusSit">H3</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">H4</kbd>
+                      </div>
+                      <div class="mt-5 flex flex-row lg:gap-x-5 gap-x-2 items-center justify-center">
+                        <kbd class="kbd btn w-20 selectBusSit">I3</kbd>
+                        <kbd class="kbd btn w-20 selectBusSit">I4</kbd>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+            <!-- <div class="w-[400px] h-[400px] bg-green-300 cmonBorder absolute">
+            </div> -->
+            <!-- <img class="w-8 " src="image/info-devider.png" alt=""> -->
+            <div class="lg:w-[48%] mx-auto bg-red-100 rounded-[20px] cmonBorder mb-10">
+                <div class="w-full  p-2 rounded-t-[20px] ">
+                    <h1 class="p-5 font-extrabold text-3xl">Select Your Seat</h1>
+                    <hr>
+                    <div class="bg-slate-300 w-[95%] h-auto mx-auto mt-10 rounded-[20px] cmonBorder px-5">
+                        <div class="flex flex-row justify-between items-center px-5 py-2">
+                            <h1>Seat<samp id="seat" class="bg-green-300 p-2 w-10 rounded-full mx-2 font-bold">00</samp></h1>
+                            <h1 class="-ml-14">Class</h1>
+                            <h1>Price</h1>
+                        </div>
+                        <hr>
+                        <div id="showSeatList" class="px-5 py-5">
+                            <!-- <li class="flex flex-row justify-between items-center">
+                                <p>A</p>
+                                <p>Economoy</p>
+                                <p>550</p>
+                            </li>
+                            <li class="flex flex-row justify-between items-center">
+                                <p>A</p>
+                                <p>Economoy</p>
+                                <p>550</p>
+                            </li>   -->
+                        </div>
+                        <hr>
+
+                        <div class="flex flex-row justify-between items-center px-5 py-2">
+                            <h1>Total Price</h1>
+                            <h1>BDT<samp id="TotalPrice" class="text-black font-bold bg-green-300 p-1 rounded-full">00</samp></h1>
+                        </div>
+                        <div id="showDiscountBox" class="hidden">
+                          <div class="flex flex-col items-center px-5 py-2 ">
+                            <div class="flex flex-row items-center justify-center select-none bg-white p-2 rounded-xl cmonBorder">
+                             <input class="p-2 focus:bg-green-50 rounded-xl select-none outline-green-500 mr-1" type="text" name="" id="CouponCodeChalk" placeholder="Have any copupon?">
+                             <button onclick="CouponCodeChalk()" class="kbd btn  bg-green-300 " type="submit">Apply</button>
+                            </div>
+                         </div>
+                        </div>
+                        <div class="flex flex-row justify-between items-center px-5 py-2">
+                            <h1>Grand Total</h1>
+                            <h1>BDT<samp id="GrandTotal" class="text-black font-bold bg-green-300 p-1 rounded-full">00</samp></h1>
+                        </div>
+
+                    </div>
+                  </div>
+                <div  class="w-[92%] mx-auto bg-slate-300 flex flex-col justify-center px-5 rounded-[20px] cmonBorder  pb-5">
+                    <div class="px-5 my-2">
+                        <h1 class="py-3 font-extrabold">Passenger Name*</h1>
+                        <input class="w-full h-8 p-5 flex items-center cmonBorder rounded-lg focus:bg-green-50" type="text" name="" placeholder="Enter your name" id="">
+                    </div>
+                    <div class="px-5 my-2">
+                        <h1 class="py-3 font-extrabold">Phone Number*</h1>
+                        <input class="w-full h-8 p-5 flex items-center cmonBorder rounded-lg focus:bg-green-50" type="number" name="" placeholder="Enter your phone number" id="">
+                    </div>
+                    <div class="px-5 my-2">
+                        <h1 class="py-3 font-extrabold">Enter your email id</h1>
+                        <input class="w-full h-8 p-5 flex items-center cmonBorder rounded-lg focus:bg-green-50" type="email" name="" placeholder="Enter your email id" id="">
+                    </div>
+                    <div class="px-5 my-2">
+                        <kbd class="w-full  p-5 py-8 flex flex-col items-center cmonBorder rounded-2xl bg-green-200 btn" type="button" name="Apply" id="">Apply</kbd>
+                        <div class="flex flex-row justify-around mt-2 m-auto w-[90%]">
+                          <p class="underline"><a href="">Terms and Conditions</a></p>
+                          <p class="underline"><a href="">Terms and Conditions</a></p>
+                        </div>
+                    </div>
+                </div>  
+                
+            </div>
+
+        </div>
+
+        </div>
+        </div>
+
+      </section>
+    </main>
+    <!-- FOOTER-SECTION-DESIGN -->
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+      <aside>
+        <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
+        <p>ACME Industries Ltd.<br>Providing reliable tech since 1992</p>
+      </aside> 
+      <nav>
+        <h6 class="footer-title">Social</h6> 
+        <div class="grid grid-flow-col gap-4">
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+        </div>
+      </nav>
+    </footer>
+
+    <!-- JAVA-SCRIPT-LINK -->
+    <script src="utility-Js-File/utility.js"></script>
+    <!-- <script src="hhhhhhhhhh.js"></script> -->
+</body>
+</html>

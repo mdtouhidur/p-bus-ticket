@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #2f04ec; */
+}
+/* body{
+    background-color: #2f04ec;
+    width: 400px;
+    height: 500px;
+} */
+.BannerImg{
+    
+    
+}
+
+.search-icon{
+    border-radius: 50px;
+    border: 2px solid #808080ab;
+}
+.search-box-area{
+    border-radius: 20px;
+
+}
+
+.driveBox:hover img{
+    display: none;
+}
+.driveBox:hover samp{
+    display: block;
+}
+hr{
+    
+    border: 1px dashed rgba(0, 0, 0, 0.555);
+}
+
+.cmonBorder{
+    border: 2px solid rgba(9, 255, 9, 0.61);
+}
+.rounded-sit-area{
+
+    /* border:solid rgba(24, 177, 24, 0.733); */
+    border-top: 5px solid rgba(0, 255, 0, 0.712);
+    border-bottom: 0px;
+    border-left: 0;
+    border-right: 0;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+   /* background-color: rgba(61, 65, 63, 0.062); */
+
+
+}
+.rounded-buttom-area{
+
+    /* border:solid rgba(24, 177, 24, 0.733); */
+    border-top:0;
+    border-bottom:  5px solid rgba(0, 255, 0, 0.712);
+    border-left: 0;
+    border-right: 0;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+   /* background-color: rgba(61, 65, 63, 0.062); */
+
+
+}
+li{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* color: blue; */
+
+}
